@@ -14,7 +14,7 @@ def invQuestion():
         }
         masterInv.append(itemDict)
 
-        change = input("Do you want to change the quantity of one of your items?: ").lower()
+        change = input("Do you want to change the quantity of one of your items? y/n: ").lower()
 
         if change == "y".lower():
             itemChange = input("Which item do you want to change?: ").lower()
@@ -33,7 +33,9 @@ def invQuestion():
         stop = input("Did you add all your items? y/n: ").lower() 
         if stop == "y".lower():
             break
+            
 
 invQuestion()
 for x in masterInv:
     print(x)
+
